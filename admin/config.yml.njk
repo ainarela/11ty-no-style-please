@@ -15,15 +15,25 @@ site_url: {{ site.url }}
 {% endif %}
 
 collections:
-  - label: Posts
-    name: posts
-    folder: posts
+  - label: Notes
+    name: notes
+    folder: posts/notes
     create: true
     fields:
       - { label: Title, name: title, widget: string }
       - { label: Date, name: date, widget: datetime, required: false }
       - { label: Tags, name: tags, widget: list, default: ["post"]}
       - { label: Content, name: body, widget: markdown }
+  - label: Images
+    name: images
+    folder: posts/images
+    create: true
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Date, name: date, widget: datetime, required: false }
+      - { label: Tags, name: tags, widget: list, default: ["post"]}
+      - { label: Content, name: body, widget: markdown }
+      - { label: File, name: file, widget: file }
   - label: Settings
     name: settings
     files:

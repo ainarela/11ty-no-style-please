@@ -1,7 +1,0 @@
----
-title: A note
-date: 2023-10-06T15:30:27.137Z
-tags:
-  - post
----
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sollicitudin dui sed justo congue sollicitudin. Proin non finibus erat, ac iaculis purus. Cras egestas tempor sapien, eu euismod ipsum maximus vel. Curabitur ornare dictum quam. Fusce nec metus eget dolor gravida egestas eget sed lacus. Aliquam vulputate urna sed lacus dictum, dignissim tincidunt mi blandit. Morbi quis porttitor augue, in facilisis tellus. Sed feugiat risus et magna commodo, in iaculis ex ultricies. Duis tincidunt justo magna, non volutpat est egestas a. Suspendisse feugiat, dui a venenatis finibus, augue ante scelerisque turpis, ac ullamcorper elit elit quis nisl. Pellentesque urna diam, posuere at ipsum et, placerat fermentum enim. Aliquam ut finibus diam, a vulputate magna.

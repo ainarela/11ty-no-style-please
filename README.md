@@ -18,7 +18,7 @@ It has [Netlify CMS](https://www.netlifycms.org/) built in and can deploy to [Ne
 # Usage
 The simplest way to use this template is to deploy it on Netlify using this button:
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/stopnoanime/11ty-no-style-please&stack=cms)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ainarela/my-diary-2&stack=cms)
 
 After deploying it to Netlify, you will be invited to join the CMS by email. 
 After accepting the invite and setting a password you can start change the site's settings, and creating posts from within the CMS.

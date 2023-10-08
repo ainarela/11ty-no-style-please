@@ -14,7 +14,7 @@ collections:
     name: notes
     folder: posts/notes
     create: true
-    slug: "{{slug}}"
+    slug: {{slug}}
     fields:
       - { label: Title, name: title, widget: string }
       - { label: Date, name: date, widget: datetime, required: false }
@@ -24,7 +24,7 @@ collections:
     name: images
     folder: posts/images
     create: true
-    slug: "{{slug}}"
+    slug: {{slug}}
     fields:
       - { label: Title, name: title, widget: string }
       - { label: Date, name: date, widget: datetime, required: false }

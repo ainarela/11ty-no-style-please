@@ -7,8 +7,8 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: media/uploads" # Media files will be stored in the repo under media/uploads
-public_folder: /media/uploads" # The src attribute for uploaded media will begin with /media/uploads
+media_folder: media/uploads # Media files will be stored in the repo under media/uploads
+public_folder: /media/uploads # The src attribute for uploaded media will begin with /media/uploads
 
 {% if site.url %}
 site_url: {{ site.url }}
@@ -19,6 +19,7 @@ collections:
     name: notes
     folder: posts/notes
     create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: Title, name: title, widget: string }
       - { label: Date, name: date, widget: datetime, required: false }
@@ -28,7 +29,7 @@ collections:
     name: images
     folder: posts/images
     create: true
-    slug: "{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: Title, name: title, widget: string }
       - { label: Date, name: date, widget: datetime, required: false }

@@ -28,6 +28,7 @@ collections:
     name: images
     folder: posts/images
     create: true
+    slug: "{{slug}}"
     fields:
       - { label: Title, name: title, widget: string }
       - { label: Date, name: date, widget: datetime, required: false }

@@ -4,6 +4,7 @@ const markdownIt = require("markdown-it");
 module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("css");
     eleventyConfig.addPassthroughCopy("media");
+    eleventyConfig.addPassthroughCopy("admin");
 
     eleventyConfig.addFilter("formatDate", (dateObj) => {
         return DateTime.fromJSDate(dateObj).toISODate();

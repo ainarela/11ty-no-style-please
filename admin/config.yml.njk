@@ -21,59 +21,59 @@ collections:
     create: true
     fields:
       - { label: Title, name: title, widget: string }
-      - { label: Date, name: date, widget: datetime }
-      - { label: Tags, name: tags, widget: hidden, default: post}
-      - { label: Content, name: content, widget: markdown }
+      - { label: Date, name: date, widget: datetime, format: YYYY-MM-DD }
+      - { label: Tags, name: tags, widget: list, default: ["post"] }
+      - { label: Content, name: body, widget: markdown }
   - label: "🏞 Images"
     name: images
     folder: posts/images
     create: true
     fields:
       - { label: Title, name: title, widget: string }
-      - { label: Date, name: date, widget: datetime, format: "DD MMMM YYYY" }
-      - { label: Tags, name: tags, widget: hidden, default: post }
+      - { label: Date, name: date, widget: datetime, format: YYYY-MM-DD }
+      - { label: Tags, name: tags, widget: list, default: ["post"] }
       - { label: Image, name: image, widget: image }
-      - { label: Caption, name: caption, widget: markdown, minimal: true, required: false }
+      - { label: Caption, name: body, widget: markdown, minimal: true, required: false }
   - label: "🎥 Videos"
     name: videos
     folder: posts/videos
     create: true
     fields:
       - { label: Title, name: title, widget: string }
-      - { label: Date, name: date, widget: datetime, format: "DD MMMM YYYY" }
-      - { label: Tags, name: tags, widget: hidden, default: post }
+      - { label: Date, name: date, widget: datetime, format: YYYY-MM-DD }
+      - { label: Tags, name: tags, widget: list, default: ["post"] }
       - { label: File, name: file, widget: file }
-      - { label: Caption, name: caption, widget: markdown, minimal: true, required: false }
+      - { label: Caption, name: body, widget: markdown, minimal: true, required: false }
   - label: "🎙 Audios"
     name: audios
     folder: posts/audios
     create: true
     fields:
       - { label: Title, name: title, widget: string }
-      - { label: Date, name: date, widget: datetime, format: "DD MMMM YYYY" }
-      - { label: Tags, name: tags, widget: hidden, default: post }
+      - { label: Date, name: date, widget: datetime, format: YYYY-MM-DD }
+      - { label: Tags, name: tags, widget: list, default: ["post"] }
       - { label: File, name: file, widget: file }
-      - { label: Caption, name: caption, widget: markdown, minimal: true, required: false }
+      - { label: Caption, name: body, widget: markdown, minimal: true, required: false }
   - label: "🧩 Embedded"
     name: embedded
     folder: posts/embedded
     create: true
     fields:
       - { label: Title, name: title, widget: string }
-      - { label: Date, name: date, widget: datetime, format: "DD MMMM YYYY" }
-      - { label: Tags, name: tags, widget: hidden, default: post }
+      - { label: Date, name: date, widget: datetime, format: YYYY-MM-DD }
+      - { label: Tags, name: tags, widget: list, default: ["post"] }
       - { label: "Embedded code", name: code, widget: markdown }
-      - { label: Caption, name: caption, widget: markdown, minimal: true, required: false }
+      - { label: Caption, name: body, widget: markdown, minimal: true, required: false }
   - label: "🔖 Quotes"
     name: quotes
     folder: posts/quotes
     create: true
     fields:
       - { label: Title, name: title, widget: string }
-      - { label: Date, name: date, widget: datetime, format: "DD MMMM YYYY" }
-      - { label: Tags, name: tags, widget: hidden, default: post }
-      - { label: Quote, name: quote, widget: markdown }
+      - { label: Date, name: date, widget: datetime, format: YYYY-MM-DD }
+      - { label: Tags, name: tags, widget: list, default: ["post"] }
       - { label: Source, name: source, minimal: true, widget: markdown }
+      - { label: Quote, name: body, widget: markdown }
   - label: Settings
     name: settings
     files:

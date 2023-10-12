@@ -12,5 +12,21 @@ layout: base.njk
 <main>
     <hr>
     {% set entries = homepage.menu %}
-    {% include "menu.njk" %}
-</main>
+    {# {% include "menu.njk" %} #}
+    {% for entry in entries %}
+        {% if entry.post_list %}
+            {% set posts = collections.post %}
+                {% if posts %}
+                    <div>
+                        {% for post in posts | reverse %}
+                            {% if collections.note %}
+                                <div class="note">
+                                    <div>{{ post.content | safe }}</div>
+                                    <time datetime="{{ post.date }}">{{ post.date | formatDate }}</time>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+        {% endif %}
+    {% endfor %}

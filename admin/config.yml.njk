@@ -31,7 +31,7 @@ collections:
     fields:
       - { label: Title, name: title, widget: string }
       - { label: Date, name: date, widget: datetime, format: YYYY-MM-DD }
-      - { label: Tags, name: tags, widget: list, default: ["post"] }
+      - { label: Tags, name: tags, widget: list, default: ["post", "image"] }
       - { label: Image, name: image, widget: image }
       - { label: Caption, name: body, widget: markdown, minimal: true, required: false }
   - label: "🎥 Videos"
@@ -41,7 +41,7 @@ collections:
     fields:
       - { label: Title, name: title, widget: string }
       - { label: Date, name: date, widget: datetime, format: YYYY-MM-DD }
-      - { label: Tags, name: tags, widget: list, default: ["post"] }
+      - { label: Tags, name: tags, widget: list, default: ["post", "video"] }
       - { label: File, name: file, widget: file }
       - { label: Caption, name: body, widget: markdown, minimal: true, required: false }
   - label: "🎙 Audios"
@@ -51,7 +51,7 @@ collections:
     fields:
       - { label: Title, name: title, widget: string }
       - { label: Date, name: date, widget: datetime, format: YYYY-MM-DD }
-      - { label: Tags, name: tags, widget: list, default: ["post"] }
+      - { label: Tags, name: tags, widget: list, default: ["post", "audio"] }
       - { label: File, name: file, widget: file }
       - { label: Caption, name: body, widget: markdown, minimal: true, required: false }
   - label: "🧩 Embedded"
@@ -61,7 +61,7 @@ collections:
     fields:
       - { label: Title, name: title, widget: string }
       - { label: Date, name: date, widget: datetime, format: YYYY-MM-DD }
-      - { label: Tags, name: tags, widget: list, default: ["post"] }
+      - { label: Tags, name: tags, widget: list, default: ["post", "embedded"] }
       - { label: "Embedded code", name: code, widget: markdown }
       - { label: Caption, name: body, widget: markdown, minimal: true, required: false }
   - label: "🔖 Quotes"
@@ -71,7 +71,7 @@ collections:
     fields:
       - { label: Title, name: title, widget: string }
       - { label: Date, name: date, widget: datetime, format: YYYY-MM-DD }
-      - { label: Tags, name: tags, widget: list, default: ["post"] }
+      - { label: Tags, name: tags, widget: list, default: ["post", quote] }
       - { label: Source, name: source, minimal: true, widget: markdown }
       - { label: Quote, name: body, widget: markdown }
   - label: Settings

@@ -1,0 +1,7 @@
+<figure class="embedded">
+    <time datetime="{{ post.date }}">{{ post.date | formatDate }}</time>
+    <div class="embedded-code">
+        {{ post.data.code | safe }}
+    </div>
+    <figcaption>{{ post.content | safe }}</figcaption>
+</figure>

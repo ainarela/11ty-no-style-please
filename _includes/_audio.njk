@@ -1,0 +1,11 @@
+<figure class="audio">
+    <time datetime="{{ post.date }}">{{ post.date | formatDate }}</time>
+    <audio controls>
+        <source src="{{ post.data.file }}" type="{{ post.data.type }}" />
+        <p>
+            Your browser doesn't support this audio. Here is a
+            <a href="{{ post.data.file }}">link to the audio</a> instead.
+        </p>
+    </audio>
+    <figcaption>{{ post.content | safe }}</figcaption>
+</figure>

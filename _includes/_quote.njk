@@ -1,0 +1,7 @@
+<figure class="quote">
+    <time datetime="{{ post.date }}">{{ post.date | formatDate }}</time>
+    <blockquote>
+        {{ post.content | safe }}
+    </blockquote>
+    <figcaption>{{  post.data.source | safe }}</figcaption>
+</figure>

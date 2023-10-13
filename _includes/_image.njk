@@ -1,0 +1,5 @@
+ <figure class="image">
+    <time datetime="{{ post.date }}">{{ post.date | formatDate }}</time>
+    <img src="{{ post.data.image }}" alt="" />
+    <figcaption>{{ post.content | safe }}</figcaption>
+</figure>

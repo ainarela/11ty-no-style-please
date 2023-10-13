@@ -2,31 +2,33 @@
 layout: base.njk
 ---
 <header>
-    <h1>{{ homepage.title or site.title }}</h1>
-
-    {% set subtitle = homepage.subtitle%}
-    {% if subtitle %}
-        <p>{{ subtitle }}</p>
-    {% endif %}
+    <h1>{{ site.title }}</h1>
+    <p>{{ site.description }}</p>
 </header>
 <main>
     <hr>
-    {% set entries = homepage.menu %}
-    {# {% include "menu.njk" %} #}
-    {% for entry in entries %}
-        {% if entry.post_list %}
-            {% set posts = collections.post %}
-                {% if posts %}
-                    <div>
-                        {% for post in posts | reverse %}
-                            {% if collections.note %}
-                                <div class="note">
-                                    <div>{{ post.content | safe }}</div>
-                                    <time datetime="{{ post.date }}">{{ post.date | formatDate }}</time>
-                                </div>
-                            {% endif %}
-                        {% endfor %}
-                    </div>
+    {% set posts = collections.post %}
+    {% if posts %}
+        <div class="grid">
+            {% for post in posts | reverse %}
+                {% if 'note' in post.data.tags %}
+                    {% include "_note.njk" %}
                 {% endif %}
-        {% endif %}
-    {% endfor %}
+                {% if 'image' in post.data.tags %}
+                    {% include "_image.njk" %}
+                {% endif %}
+                {% if 'video' in post.data.tags %}
+                    {% include "_video.njk" %}
+                {% endif %}
+                {% if 'audio' in post.data.tags %}
+                    {% include "_audio.njk" %}
+                {% endif %}
+                {% if 'embedded' in post.data.tags %}
+                    {% include "_embedded.njk" %}
+                {% endif %}
+                {% if 'quote' in post.data.tags %}
+                    {% include "_quote.njk" %}
+                {% endif %}
+            {% endfor %}
+        </div>
+    {% endif %}

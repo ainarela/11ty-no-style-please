@@ -4,6 +4,6 @@ date: 2023-10-12
 tags:
   - post
   - quote
-source: S﻿ource
+source: S﻿ource <a href>with a link</a>
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et enim mi. Proin auctor nisl in venenatis sodales. Donec ligula dui, tincidunt eu varius eget, condimentum ac turpis. 

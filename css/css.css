@@ -20,6 +20,10 @@ p,ul,ol {
     text-align: right;
 }
 
+audio {
+    display: block;
+}
+
 img {
     max-width: 100%;
     margin: 0 auto;
@@ -28,12 +32,16 @@ img {
 
 blockquote {
     font-style: italic;
-    border: thin solid black;
-    padding: 1rem;
 }
 
 blockquote p {
     margin: 0;
+}
+
+figure {
+    padding: 1rem;
+    border: 1px solid black;
+    margin: 2rem 0;
 }
 
 pre {
